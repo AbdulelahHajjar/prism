@@ -6,6 +6,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "bin": {
+    "prismdrahim": "./cli-binaries/prism-cli"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/AbdulelahHajjar/prism.git"

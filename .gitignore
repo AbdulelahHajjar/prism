@@ -20,7 +20,6 @@ node_modules/
 dist
 .vscode
 .idea
-cli-binaries
 
 # Stoplight Style Guides
 .stoplight/styleguide.json
