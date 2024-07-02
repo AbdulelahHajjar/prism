@@ -16,7 +16,7 @@ elif [ "$UNAME" = "Linux" ] ; then
   PLATFORM="linux"
 fi
 
-URL="https://github.com/stoplightio/prism/releases/latest/download/prism-cli-$PLATFORM"
+URL="https://github.com/AbdulelahHajjar/prism/releases/download/v5.8.1/prism-cli"
 SRC=$(pwd)/prism-$PLATFORM
 DEST=/usr/local/bin/prism
 
