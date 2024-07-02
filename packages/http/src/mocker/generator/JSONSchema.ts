@@ -104,7 +104,7 @@ export function sortSchemaAlphabetically(source: any): any {
 
 export function generateStatic(operation: IHttpOperation, source: JSONSchema): Either<Error, unknown> {
   return pipe(
-    tryCatch(() => sampler.sample(source, { ticks: 2500 }, operation), toError),
+    tryCatch(() => sampler.sample(source, { ticks: 50000 }, operation), toError),
     E.mapLeft(err => {
       if (err instanceof sampler.SchemaSizeExceededError) {
         return new SchemaTooComplexGeneratorError(operation, err);
